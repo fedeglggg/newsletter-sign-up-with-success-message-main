@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="wrapper">
+      <div class="card">
+        <div class="column">
+          <form>
+            <h1>Stay updated!</h1>
+            <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
+            <div class="form-line">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="check-icon" />
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="form-line">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="check-icon" />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="form-line">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="check-icon" />
+              <p>And much more!</p>
+            </div>
+
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company.com" />
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <div class="column">
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="Error icon"
+            class="error-icon" />
+        </div>
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="hide-for-now">
+      Thanks for subscribing! A confirmation email has been sent to
+      ash@loremcompany.com. Please open it and click the button inside to
+      confirm your subscription. Dismiss message
+    </div>
+    <!-- Success message end -->
+  </body>
+</html>

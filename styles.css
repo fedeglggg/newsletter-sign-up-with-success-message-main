@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(".assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(".assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --clr-dark-grey: hsl(234, 29%, 20%);
+  --clr-charcoal-grey: hsl(235, 18%, 26%);
+  --clr-grey: hsl(231, 7%, 60%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-tomato: hsl(4, 100%, 67%);
+  --fs-small: 0.75rem;
+  --fs-normal: 1rem;
+  --fs-medium: 1.25rem;
+  --fs-large: 1.5rem;
+  --fs-xlarge: 2rem;
+  --fs-xxlarge: 3.4rem;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+body {
+  background-color: var(--clr-charcoal-grey);
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: var(--clr-charcoal-grey);
+  font-size: var(--fs-xxlarge);
+  font-weight: var(--fw-bold);
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: var(--clr-dark-grey);
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-normal);
+  line-height: 1.4rem;
+  padding-bottom: 1.5rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  background-color: var(--clr-white);
+  max-width: 927px;
+  border-radius: 40px;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  align-content: center;
+}
+
+.column > img {
+  width: 100%;
+}
+
+.column {
+  display: grid;
+}
+
+form {
+  align-self: center;
+  padding: 2.5rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--fw-normal);
+  color: var(--clr-dark-grey);
+  line-height: 2rem;
+}
+
+.form-line {
+  display: flex;
+  gap: 1rem;
+}
+
+.hide-for-now {
+  display: none;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-small);
+  display: block;
+  padding-bottom: 0.5rem;
+  padding-top: 2.5rem;
+}
+
+input {
+  size: 20px;
+  border-radius: 5px;
+}
